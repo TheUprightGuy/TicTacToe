@@ -22,6 +22,7 @@
     <ClInclude Include="gamebase.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="gamebase.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -1,6 +1,7 @@
 #ifndef __GAMEBASE_H__
 #define __GAMEBASE_H__
 #include <vector>
+
 class GameBase
 {
 public:
@@ -9,14 +10,20 @@ public:
 
 	void Initialise();
 
-	void MenuProcess();
-	void GameProcess();
+	void Menu();
 
-	std::vector<bool> ReadBoard();
-	void WriteBoard(int _Place);
+	void Process();
+	void Input(bool _bSide);
+
+	void DrawBoard();
+	void ClearScreen();
+
+	bool CheckWin(bool _bPlayer);
 
 private:
 	std::vector<bool> m_bGrid;
+
+	//CAI* ...
 };
 #endif // !__GAMEBASE_H__
 
